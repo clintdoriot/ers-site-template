@@ -14,6 +14,7 @@ Tasks and configuration needed when onboarding a new ERS site.
 ### Canonical Tags & Noindex
 - [ ] Add self-referencing `<link rel="canonical">` to all pages via Script Insert always (head start area)
 - [ ] Canonical should always use `https://www.` to consolidate www/non-www and http/https variants
+- [ ] Check for ERS page aliases (e.g., `/faq/` → `/frequently_asked_questions/`). ERS serves aliases at 200 with no redirect, so the canonical script must map aliases to their primary paths. Add an alias map in the canonical script.
 - [ ] Add `<meta name="robots" content="noindex, nofollow"/>` for these paths:
   - `/cp/` — ERS Control Panel
   - `/cart/` — Shopping cart
